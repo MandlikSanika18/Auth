@@ -32,6 +32,7 @@ function ForgotPassword() {
       return;
     }
 
+    
     setIsLoading(true);
     setStatus(null);
     setLastRequestTime(Date.now());
