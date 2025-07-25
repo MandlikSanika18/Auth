@@ -184,7 +184,7 @@ function Login() {
               Don't have an account?{' '}
               <button
                 type="button"
-                onClick={() => {/* Add sign up navigation */}}
+                onClick={() => Navigate('/register')}
                 className="text-indigo-600 hover:text-indigo-700 font-semibold transition-colors duration-200 hover:underline decoration-2 underline-offset-4"
               >
                 Sign up
