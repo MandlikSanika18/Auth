@@ -157,7 +157,7 @@ function Login() {
             <button
   type="button"
   onClick={() => {
-    window.open("http://localhost:5000/auth/google", "_self");
+    window.open("https://auth-mp35.onrender.com/auth/google", "_self");
   }}
   className="flex items-center justify-center px-4 py-3 sm:py-4 border-2 border-gray-200 rounded-xl hover:border-gray-300 hover:bg-gray-50 transition-all duration-200 group"
 >
