@@ -14,7 +14,7 @@ router.get(
   }),
   (req, res) => {
     const { token, user } = req.user;
-    res.redirect(`${process.env.CLIENT_URL}/github-success?token=${token}&email=${user.email}`);
+    res.redirect(`https://auth-mp35.onrender.com/github-success?token=${token}&email=${user.email}`);
   }
 );
 
