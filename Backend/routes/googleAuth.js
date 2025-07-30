@@ -14,7 +14,7 @@ router.get('/google/callback',
   }),
   (req, res) => {
     const { token, user } = req.user;
-    res.redirect(`${process.env.CLIENT_URL}/google-success?token=${token}&email=${user.email}`);
+    res.redirect(` https://auth-mp35.onrender.com/google-success?token=${token}&email=${user.email}`);
   }
 );
 
