@@ -9,6 +9,7 @@ const passportConfig = require('./config/passport');
 dotenv.config();
 connectDB();
 
+
 const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../Frontend/dist')));
@@ -23,6 +24,9 @@ app.use(passport.session());
 
 const googleAuthRoutes = require('./routes/googleAuth');
 app.use('/auth', googleAuthRoutes); // 🔥 mount at /auth (not /api/auth)
+
+const githubAuthRoutes = require('./routes/githubAuth');
+app.use('/auth', githubAuthRoutes); // 🔥 mount at /auth (not /
 
 
 app.get('*', (req, res) => {

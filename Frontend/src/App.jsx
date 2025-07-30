@@ -18,6 +18,7 @@ function App() {
         <Route path="/reset-password/:token" element={<ResetPassword />} />
         <Route path="/google-success" element={<GoogleSuccess />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/github-success" element={<GoogleSuccess />} />
       </Routes>
     </Router>
   );

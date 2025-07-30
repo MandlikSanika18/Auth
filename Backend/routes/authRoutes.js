@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const authController = require('../controllers/authController');
 const passport = require('passport');
+const GoogleStrategy = require('passport-google-oauth20').Strategy;
+const GitHubStrategy = require('passport-github2').Strategy;
 
 router.post('/register', authController.register);
 router.post('/login', authController.login);
@@ -20,5 +22,6 @@ router.get('/google/callback',
     res.redirect(`${process.env.CLIENT_URL}/google-success?token=${token}&email=${user.email}`);
   }
 );
+
 
 module.exports = router;

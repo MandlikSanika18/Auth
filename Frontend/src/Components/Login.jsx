@@ -170,16 +170,16 @@ function Login() {
   <span className="ml-2 text-sm sm:text-base font-medium text-gray-700 group-hover:text-gray-900">Google</span>
 </button>
 
-            
-            <button
-              type="button"
-              className="flex items-center justify-center px-4 py-3 sm:py-4 border-2 border-gray-200 rounded-xl hover:border-gray-300 hover:bg-gray-50 transition-all duration-200 group"
-            >
-              <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="#1877F2" viewBox="0 0 24 24">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-              </svg>
-              <span className="ml-2 text-sm sm:text-base font-medium text-gray-700 group-hover:text-gray-900">Facebook</span>
-            </button>
+          <button
+  onClick={() => window.open("http://localhost:5000/auth/github", "_self")}
+
+  className="flex items-center justify-center px-4 py-3 sm:py-4 border-2 border-gray-200 rounded-xl hover:border-gray-300 hover:bg-gray-50 transition-all duration-200 group"
+>
+  <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="black" viewBox="0 0 24 24">
+    <path d="M12 .297a12 12 0 00-3.79 23.4c.6.11.82-.26.82-.58v-2.05c-3.34.73-4.04-1.61-4.04-1.61a3.18 3.18 0 00-1.34-1.76c-1.1-.75.09-.73.09-.73a2.5 2.5 0 011.82 1.22 2.54 2.54 0 003.48 1 2.56 2.56 0 01.76-1.6c-2.66-.3-5.46-1.33-5.46-5.9a4.6 4.6 0 011.22-3.18 4.3 4.3 0 01.12-3.14s1-.32 3.3 1.21a11.4 11.4 0 016 0C17 5.8 18 6.13 18 6.13a4.3 4.3 0 01.12 3.14 4.6 4.6 0 011.22 3.18c0 4.59-2.8 5.59-5.47 5.88a2.86 2.86 0 01.82 2.22v3.29c0 .32.22.69.83.57A12 12 0 0012 .297z" />
+  </svg>
+  <span className="ml-2 text-sm sm:text-base font-medium text-gray-700 group-hover:text-gray-900">GitHub</span>
+</button>
           </div>
 
           {/* Sign Up Link */}
